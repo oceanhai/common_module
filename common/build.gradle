@@ -1,15 +1,14 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        applicationId "com.wuhai.common"
-        minSdkVersion rootProject.ext.minSdkVersion
+        minSdkVersion rootProject.ext.root_minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode rootProject.ext.versionCode
-        versionName rootProject.ext.versionName
+        versionCode rootProject.ext.root_versionCode
+        versionName rootProject.ext.root_versionName
     }
     buildTypes {
         release {
@@ -23,4 +22,6 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
     compile rootProject.ext.root_v7
+    compile rootProject.ext.root_gson
+//    compile 'com.android.support:design:23.3.0'
 }
