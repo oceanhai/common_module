@@ -1,4 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="www.wuhai.common">
 
+    <application
+        android:allowBackup="false"
+        android:label="@string/common_app_name"
+        android:supportsRtl="true" >
+
+    </application>
+
 </manifest>
